@@ -2,7 +2,7 @@ $example HSPICE setup file
 
 $transistor model
 .include "/home/cad/kits/IBM_CMRF8SF-LM013/IBM_PDK/cmrf8sf/V1.2.0.0LM/HSPICE/models/model013.lib_inc"
-.include "home/eng/j/jxb150730/cad/cadence/invlvs.sp"
+.include "/home/eng/j/jxb150730/cad/cadence/invlvs.sp"
 
 .global vdd! gnd!
 .option post runlvl=5
