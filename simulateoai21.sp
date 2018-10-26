@@ -45,7 +45,7 @@ $.tr 100ps 12ns sweep WP 1u 9u 0.5u
 $ method 1
 .measure tran iavg avg i(vdd) from=0 to=10n $average current in one clock cycle
 .measure energy param='1.2*iavg*10n' $calculate energy in one clock cycle
-.measure edp1 param='abs(delay*energy)'
+.measure edp1 param='abs(delaya*energy)'
 
 $ method 2
 .measure tran t1 when v(ina)=1.19 fall=1
@@ -58,6 +58,6 @@ $ method 2
 .measure energy1 param='1.2*i1*(t2-t1)' $calculate energy when output rise
 .measure energy2 param='1.2*i2*(t4-t3)' $calculate energy when output fall
 .measure energysum param='energy1+energy2'
-.measure edp2 param='abs(delay*energysum)'
+.measure edp2 param='abs(delaya*energysum)'
 
 .end
